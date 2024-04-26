@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Character Count",
+  "version": "1.0",
+  "description": "Show the number of characters in selected text",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "permissions": ["activeTab"]
+}
